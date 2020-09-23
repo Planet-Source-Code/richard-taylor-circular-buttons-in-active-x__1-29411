@@ -1,0 +1,88 @@
+*************************************************************************************************
+*************************************************************************************************
+*************************************************************************************************
+***********************************       ActiveX In VB      ************************************
+*************************************************************************************************
+*************************************************************************************************
+*************************************************************************************************
+
+Created By Richard Taylor
+
+The main reason VB is Visual BASIC is because of this Tutorial, lol - meaning - this is really BASIC, even if you don't know VB Very well ActiveX can be very usefull for mass producing programs that do the same thing. Or if you don't want any stupid Crackers opening your files. You people can't crack .ocx as easy as .exe
+
+Aw well past that.
+
+In This First lesson of the tutorial we will make nice little round buttons that change colour 	when you move over your mouse and so on.
+
+Step 1, Fire up VB and in the "new project" screen double click the "ActiveX CONTROL" icon to 	load up a new ActiveX Control Project... [Duhhhhh!]
+
+Step 2, You will notice that you only get a small box that has no border. This is your control 	interface. From the huge properties menu at the side you can change many thing in your 	.ocx file.
+
+Step 3, To start, we are making a round button. Create an oval (about 1215 x 1215) in the top 		left of the ActiveX control interface. ReSize the control so its the same size as the 		circle.
+
+Step 4, Change the circle to have a white Opaque background keep the border at size 1, Re-name 		this "Button".
+
+Step 5, Create a transparent label in the center of the circle to use as the caption. Align it to 	"Center Justify", Re-name the label "lblCaption", Then create an image that takes up all 	the back of the control and call it "imgBack" - it MUST have no pic, - I'll explain later.
+
+Step 6, Right click the Projcet explorer toolbar on the white bit and create a new "User 		Control", On the menu that appears - select "VB ActiveX Control Interface Wizard", this 	is a 	wizard tool that allows you to set the properties of the ActiveX project
+
+Step 7, To save a bit of time - press the button that changes them all to "Available Names" and 	clears the "Selected Names" - The button with "<<"
+
+Step 8, Now select the following and press the ">" button on EACH one:
+	Backcolor
+	Caption
+	Click
+	Enabled
+	Font
+	FontBold
+	FontItalic
+	FontName
+	FontStrikeThrough
+	FontUnderline
+	FontColor
+	MouseDown
+	MouseIcon
+	MouseMove
+	MousePointer
+	and last ut not least...	MouseUp
+
+Step 9, Click Next, Then Click Next Again, Now... The hard(ish) bit, you've goto change the 		properties to the item change: [It Goes; Control = Item = Property Of Item] Simple
+	Backcolor = Button = Backcolor
+	Caption = lblCaption = Caption
+	Click = ImgBack = Click
+	Enabled = ImgBack = Enabled
+	Font = LblCaption = Font
+	FontBold = LblCaption = FontBold
+	FontItalic = LblCaption = FontItalic
+	FontName = LblCaption = FontName
+	FontSize = LblCaption = FontSize
+	FontStrikeThrough = LblCaption = FontStrikeThrough
+	FontTransparent = LblCaption = Caption (Tell You Why Later)
+	FontUnderline = LblCaption = FontUnderline
+	ForeColor = LblCaption = ForeColor
+	MouseDown = ImgBack = MouseDown
+	MouseIcon = ImgBack = MouseIcon
+	MouseMove = ImgBack = MouseMove
+	MousePointer = UserControl = MousePointer
+	MouseUp = UserControl = MouseUp
+	Then Click Next
+
+Step 10, Then Click Finish!!!, Finally, got past one OF the hard parts, but now - an little  		easier	task to do - you might be =( but in the end you'll definatly be all =D LOL. Load 	up the 	code for the User Control.
+
+Step 11, The Code Probably Makes No Sense. Well, GoTo "File" > "Make *****.ocx" and create the 		file. Open up yet another Session of VB. Create a "Standard EXE" like you would for most 	projects. Right-Click the components toolbox and click "Components" in that form 		click the "Browse" button and load up the .ocx you just made.
+
+Step 12, Re-name the UserControl as "Circular_Button", The Project name as the name of the 	Control you want, and......... WE'RE DONE!
+
+Step 13, Change the "Toolbox Bitmap" of the UserControls properties to the Picture you want to 	appear in the tool box at runtime.
+
+Step 14, Place your home-made button on the form. Play around with the code in the new project to 	test your button.
+
+*************************************************************************************************
+
+From Step 8 you can create youre own controls so you can customize, True/False statements and other more complicated items but if you just need the BASICs stick with this tutorial, read it over and over again untill you have mastered it and try a more advanced tutorial.
+
+Thanks for reading this. 
+Richard Taylor - Richard2000uk@Hotmail.com - www.chat-plus.cjb.com
+
+(c)Copyright 2001 Richard Taylor
+	
